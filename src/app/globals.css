@@ -1,0 +1,85 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+:root {
+  --background: #f0f2f5;
+  --foreground: #1a1a2e;
+  --card: #ffffff;
+  --card-foreground: #1a1a2e;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a2e;
+  --primary: #4c1d95;
+  --primary-foreground: #ffffff;
+  --secondary: #6b7280;
+  --secondary-foreground: #ffffff;
+  --muted: #e5e7eb;
+  --muted-foreground: #6b7280;
+  --accent: #8b5cf6;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --border: #e5e7eb;
+  --input: #ffffff;
+  --ring: #4c1d95;
+  --chart-1: #4c1d95;
+  --chart-2: #8b5cf6;
+  --chart-3: #a78bfa;
+  --chart-4: #c4b5fd;
+  --chart-5: #e9d5ff;
+  --sidebar: #1a1a2e;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #4c1d95;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #8b5cf6;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #2d2d44;
+  --sidebar-ring: #4c1d95;
+  --radius: 0.5rem;
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a2e;
+    --foreground: #f0f2f5;
+    --card: #2d2d44;
+    --card-foreground: #f0f2f5;
+    --popover: #2d2d44;
+    --popover-foreground: #f0f2f5;
+    --primary: #8b5cf6;
+    --primary-foreground: #ffffff;
+    --secondary: #9ca3af;
+    --secondary-foreground: #1a1a2e;
+    --muted: #374151;
+    --muted-foreground: #9ca3af;
+    --accent: #c4b5fd;
+    --accent-foreground: #1a1a2e;
+    --destructive: #ef4444;
+    --border: #4b5563;
+    --input: #2d2d44;
+    --ring: #8b5cf6;
+    --chart-1: #8b5cf6;
+    --chart-2: #c4b5fd;
+    --chart-3: #d1b6f8;
+    --chart-4: #e9d5ff;
+    --chart-5: #f3e8ff;
+    --sidebar: #121221;
+    --sidebar-foreground: #f0f2f5;
+    --sidebar-primary: #8b5cf6;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #c4b5fd;
+    --sidebar-accent-foreground: #1a1a2e;
+    --sidebar-border: #3f3f55;
+    --sidebar-ring: #8b5cf6;
+  }
+}
